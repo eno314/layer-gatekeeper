@@ -24,18 +24,18 @@ kotlin {
 
 gradlePlugin {
     website = "https://github.com/eno314"
-    vcsUrl = "https://github.com/eno314/package-gatekeeper.git"
+    vcsUrl = "https://github.com/eno314/layer-gatekeeper.git"
     plugins {
-        create("PackageGatekeeperPlugin") {
-            id = "jp.eno314.package-gatekeeper"
-            implementationClass = "jp.eno314.PackageGatekeeperPlugin"
+        create("LayerGatekeeperPlugin") {
+            id = "jp.eno314.layer-gatekeeper"
+            implementationClass = "jp.eno314.LayerGatekeeperPlugin"
         }
     }
 }
 
 publishing {
     publications {
-        create<MavenPublication>("PackageGatekeeperPlugin") {
+        create<MavenPublication>("LayerGatekeeperPlugin") {
             from(components["java"])
             version = project.version.toString()
             groupId = project.group.toString()

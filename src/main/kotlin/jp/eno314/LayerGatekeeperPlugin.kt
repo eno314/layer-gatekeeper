@@ -3,11 +3,11 @@ package jp.eno314
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-class PackageGatekeeperPlugin : Plugin<Project> {
+class LayerGatekeeperPlugin : Plugin<Project> {
     override fun apply(project: Project) {
-        project.task("helloPackageGatekeeperPlugin") {
+        project.task("helloLayerGatekeeperPlugin") {
             it.doLast {
-                println("Hello, jp.eno314.PackageGatekeeperPlugin!")
+                println("Hello, jp.eno314.LayerGatekeeperPlugin!")
             }
         }
     }
